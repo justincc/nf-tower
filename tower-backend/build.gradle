@@ -103,6 +103,8 @@ test.classpath += configurations.developmentOnly
 mainClassName = "io.seqera.tower.Application"
 tasks.withType(GroovyCompile) {
     groovyOptions.forkOptions.jvmArgs.add('-Dgroovy.parameters=true')
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8    
 }
 
 afterEvaluate {
